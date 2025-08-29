@@ -52,7 +52,13 @@ public class ChoccysMixMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.CHEESE);
+            event.accept(ModItems.APPLE_PIE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.CURD);
+            event.accept(ModItems.CHEESIUM);
+            event.accept(ModItems.CHEDDARITE);
         }
     }
 
