@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "group": "Food",
+  "category": "food",
+  "ingredient": "minecraft:milk_bucket",
+  "result": {
+    "id": "choccysmixmod:cheese_curd",
+    "count": 9
+  },
+  "experience": 0.02,
+  "cookingtime": 300
+}

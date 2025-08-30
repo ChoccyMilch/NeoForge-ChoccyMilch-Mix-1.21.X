@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "group": "MISC",
+  "category": "misc",
+  "ingredient": "choccysmixmod:cheese_block",
+  "result": {
+    "id": "choccysmixmod:cheesium",
+    "count": 1
+  },
+  "experience": 0.35,
+  "cookingtime": 800
+}

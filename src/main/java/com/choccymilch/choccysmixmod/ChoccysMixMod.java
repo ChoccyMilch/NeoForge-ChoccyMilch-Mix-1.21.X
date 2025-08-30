@@ -1,7 +1,9 @@
 package com.choccymilch.choccysmixmod;
 
+import com.choccymilch.choccysmixmod.block.ModBlocks;
 import com.choccymilch.choccysmixmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.ItemLike;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -36,7 +38,7 @@ public class ChoccysMixMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
-
+        ModBlocks.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -51,14 +53,22 @@ public class ChoccysMixMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.CHEESE);
-            event.accept(ModItems.APPLE_PIE);
+            event.accept((ItemLike) ModItems.CHEESE);
+            event.accept((ItemLike) ModItems.APPLE_PIE);
+            event.accept((ItemLike) ModItems.CARAMEL);
+            event.accept((ItemLike) ModItems.CARAMEL_APPLE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.CURD);
-            event.accept(ModItems.CHEESIUM);
-            event.accept(ModItems.CHEDDARITE);
+            event.accept((ItemLike) ModItems.CURD);
+            event.accept((ItemLike) ModItems.CHEESIUM);
+            event.accept((ItemLike) ModItems.CHEDDARITE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.CHEESE_BLOCK);
+            event.accept(ModBlocks.CHEESIUM_BLOCK);
+            event.accept(ModBlocks.CHEDDARITE_BLOCK);
         }
     }
 

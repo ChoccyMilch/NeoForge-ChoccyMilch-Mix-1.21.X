@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "A": "minecraft:apple",
+    "E": "minecraft:egg",
+    "S": "minecraft:sugar"
+  },
+  "pattern": [
+    "AS ",
+    " E "
+  ],
+  "result": {
+    "count": 1,
+    "id": "choccysmixmod:apple_pie"
+  }
+}

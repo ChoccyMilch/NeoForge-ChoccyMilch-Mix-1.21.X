@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "group": "Food",
+  "category": "food",
+  "ingredient": "minecraft:sugar",
+  "result": {
+    "id": "choccysmixmod:caramel",
+    "count": 3
+  },
+  "experience": 0.02,
+  "cookingtime": 200
+}

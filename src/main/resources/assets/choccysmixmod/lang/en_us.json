@@ -1,5 +1,13 @@
 {
   "item.choccysmixmod.cheese": "Cheese",
   "item.choccysmixmod.cheese_curd": "Cheese Curd",
-  "item.choccysmixmod.apple_pie": "Apple Pie"
+  "item.choccysmixmod.apple_pie": "Apple Pie",
+  "item.choccysmixmod.caramel_apple": "Caramel Apple",
+  "item.choccysmixmod.cheesium": "Cheesium",
+  "item.choccysmixmod.cheddarite": "Cheddarite",
+  "item.choccysmixmod.caramel": "Caramel",
+
+  "block.choccysmixmod.cheese_block": "Block of Cheese",
+  "block.choccysmixmod.cheesium_block": "Block of Cheesium",
+  "block.choccysmixmod.cheddarite_block": "Block of Cheddarite"
 }
