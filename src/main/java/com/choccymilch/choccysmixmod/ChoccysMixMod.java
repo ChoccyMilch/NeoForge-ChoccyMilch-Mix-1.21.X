@@ -1,6 +1,7 @@
 package com.choccymilch.choccysmixmod;
 
 import com.choccymilch.choccysmixmod.block.ModBlocks;
+import com.choccymilch.choccysmixmod.item.ModCreativeModeTabs;
 import com.choccymilch.choccysmixmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.ItemLike;
@@ -37,6 +38,8 @@ public class ChoccysMixMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         // Register the item to a creative tab
@@ -52,24 +55,7 @@ public class ChoccysMixMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept((ItemLike) ModItems.CHEESE);
-            event.accept((ItemLike) ModItems.APPLE_PIE);
-            event.accept((ItemLike) ModItems.CARAMEL);
-            event.accept((ItemLike) ModItems.CARAMEL_APPLE);
-        }
 
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept((ItemLike) ModItems.CURD);
-            event.accept((ItemLike) ModItems.CHEESIUM);
-            event.accept((ItemLike) ModItems.CHEDDARITE);
-        }
-
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.CHEESE_BLOCK);
-            event.accept(ModBlocks.CHEESIUM_BLOCK);
-            event.accept(ModBlocks.CHEDDARITE_BLOCK);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

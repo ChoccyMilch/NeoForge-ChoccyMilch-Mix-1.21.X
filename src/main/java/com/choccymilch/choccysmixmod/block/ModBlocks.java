@@ -36,6 +36,12 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.ANCIENT_DEBRIS));
 
+    public static final DeferredBlock<Block> CHEDDARITE_ORE = registerBlock("cheddarite_ore", properties -> new Block(properties),
+            BlockBehaviour.Properties.of()
+                    .strength(60.0f, 1400.0f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.ANCIENT_DEBRIS));
+
     // Helper method to actually register the block
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, ? extends T> blockFactory, BlockBehaviour.Properties blockProperties) {
         DeferredBlock<T> block = BLOCKS.registerBlock(name, blockFactory, blockProperties);

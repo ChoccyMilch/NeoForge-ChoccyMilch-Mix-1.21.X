@@ -9,5 +9,9 @@
 
   "block.choccysmixmod.cheese_block": "Block of Cheese",
   "block.choccysmixmod.cheesium_block": "Block of Cheesium",
-  "block.choccysmixmod.cheddarite_block": "Block of Cheddarite"
+  "block.choccysmixmod.cheddarite_block": "Block of Cheddarite",
+
+  "creativetab.choccysmixmod.choccys_treats": "Choccy's Treats",
+  "creativetab.choccysmixmod.choccys_blocks": "Choccy's Blocks",
+  "creativetab.choccysmixmod.choccys_ingredients": "Choccy's Ingredients"
 }
