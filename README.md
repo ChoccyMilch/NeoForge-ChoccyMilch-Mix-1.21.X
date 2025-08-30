@@ -1,16 +1,10 @@
 
-Installation information
+[Choccy's Mix Mod](https://modrinth.com/user/ChoccyMilch)
 =======
+[Modrinth](https://modrinth.com/user/ChoccyMilch)
+This mod provides  weird, and random features that I think enhance the gameplay of Minecraft (This is a more satirical mod and does not take itself serious if it wasnt obvious). It adds various items including food, equipment, and more...
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+This mod is a means for me to learn, while having fun and allowing others to possible enjoy my work as well. If you enjoy this mod please spread the word. If you have an idea or suggestion and would like to contribute you are free to do that as well. There are many things planned and so I hope everyone enjoys the ride.
 
 Mapping Names:
 ============
